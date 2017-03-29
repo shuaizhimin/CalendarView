@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/horizontal_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.handsome.android.calendar.horizontal.HorizontalActivity">
+    <TextView
+        android:id="@+id/mYearMonthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="2dp"
+        android:drawableRight="@drawable/horizontal_ic_arrow_down"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_14"
+        tools:text="2017年3月"/>
+    <LinearLayout
+        android:id="@+id/mTabWeekLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mYearMonthText"
+        android:orientation="horizontal"
+        android:padding="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/mTabWeekLinear"
+        android:background="#999999"/>
+
+    <TextView
+        android:id="@+id/mSelectDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="#333333"
+        android:textSize="@dimen/text_14"
+        tools:text="2017年3月"/>
+</RelativeLayout>
