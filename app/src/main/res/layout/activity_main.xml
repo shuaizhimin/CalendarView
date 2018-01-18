@@ -8,22 +8,9 @@
     android:orientation="vertical"
     tools:context="com.handsome.android.calendar.MainActivity">
 
-    <TextView
-        android:id="@+id/mHorizontalCalendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="横屏日历"
-        android:textSize="16sp"/>
-    <View android:layout_width="match_parent"
-          android:layout_height="1dp"
-          android:background="#999999"/>
-
-    <TextView
-        android:id="@+id/mVerticalCalendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="竖屏日历"
-        android:textSize="16sp"/>
+  <com.handsome.android.calendar.CalendarView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/mCalendarView"
+      />
 </LinearLayout>
